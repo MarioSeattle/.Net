@@ -14,4 +14,14 @@ public interface ILogInService
 
     [OperationContract]
     int ReviewerLogin(string userName, string password);
+
+    [OperationContract]
+    bool AddAuthor(Author a);
+
+    [OperationContract]
+    bool AddBook(Book b);
+
+    [OperationContract]
+    bool AddReview(Review r);
+
 }

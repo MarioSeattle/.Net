@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6e44fbf1-835e-4f75-9b78-846acd339bb6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:39524/ServiceLoginRegistrationhomework.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceLoginRegistrationhomework.xsd" MetadataType="Schema" ID="154dfdba-f15a-4efa-b582-1c801100a5d8" SourceId="1" SourceUrl="http://localhost:39524/ServiceLoginRegistrationhomework.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceLoginRegistrationhomework1.xsd" MetadataType="Schema" ID="4d781b92-c6a6-42f3-beb1-624970a76027" SourceId="1" SourceUrl="http://localhost:39524/ServiceLoginRegistrationhomework.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceLoginRegistrationhomework2.xsd" MetadataType="Schema" ID="90592c3b-6fcf-4917-9b17-b0558d5839e1" SourceId="1" SourceUrl="http://localhost:39524/ServiceLoginRegistrationhomework.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceLoginRegistrationhomework.disco" MetadataType="Disco" ID="8181e97e-e6f4-42ac-8dd2-1e31cbe516e3" SourceId="1" SourceUrl="http://localhost:39524/ServiceLoginRegistrationhomework.svc?disco" />
+    <MetadataFile FileName="ServiceLoginRegistrationhomework.wsdl" MetadataType="Wsdl" ID="c02c77f8-5211-4787-a956-cf3d1b14e8fb" SourceId="1" SourceUrl="http://localhost:39524/ServiceLoginRegistrationhomework.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
