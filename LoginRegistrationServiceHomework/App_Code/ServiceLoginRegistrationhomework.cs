@@ -8,7 +8,59 @@ using System.Text;
 // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "ServiceLoginRegistrationhomework" in code, svc and config file together.
 public class ServiceLoginRegistrationhomework : IServiceLoginRegistrationhomework
 {
-    ShowTrackerEntities1 db = new ShowTrackerEntities1();
+    ShowTrackerEntities2 db = new ShowTrackerEntities2();
+
+    public bool addartist(Artist a)
+    {
+        Artist artist = new Artist();
+        artist.ArtistName = a.ArtistName;
+        artist.ArtistDateEntered = DateTime.Now;
+        bool result = true;
+        try
+        {
+            db.Artists.Add(artist);
+            db.SaveChanges();
+        }
+        catch (Exception ex)
+        {
+            result = false;
+        }
+        return result;
+    }
+
+    public bool addshow(Show s, ShowDetail sd)
+    {
+        Show show = new Show();
+        ShowDetail showdetail = new ShowDetail();
+
+        show.ShowDate = s.ShowDate;
+        show.ShowDateEntered = DateTime.Now;
+        show.ShowDetails = s.ShowDetails;
+        show.ShowKey = s.ShowKey;
+        show.ShowName = s.ShowName;
+        show.ShowTicketInfo = s.ShowTicketInfo;
+        show.ShowTime = s.ShowTime;
+        showdetail.Show = show;
+        showdetail.ArtistKey = sd.ArtistKey;
+        showdetail.ShowDetailAdditional = sd.ShowDetailAdditional;
+        showdetail.ShowDetailArtistStartTime = sd.ShowDetailArtistStartTime;
+        
+        
+        bool result = true;
+        try
+        {
+            db.Shows.Add(show);
+            db.ShowDetails.Add(showdetail);
+            db.SaveChanges();
+        }
+        catch
+        {
+            result = false;
+        }
+
+        return result;
+    }
+
     public int RegisterLogIn(string userName, string password)
     {
         int VenueLogInkey = 0;

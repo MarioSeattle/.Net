@@ -15,5 +15,11 @@ public interface IServiceLoginRegistrationhomework
     [OperationContract]
     int RegisterLogIn(string userName, string password);
 
+    [OperationContract]
 
+    bool addartist(Artist a);
+
+    [OperationContract]
+
+    bool addshow(Show s, ShowDetail sd);
 }
